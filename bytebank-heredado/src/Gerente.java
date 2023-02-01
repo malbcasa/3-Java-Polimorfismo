@@ -11,7 +11,8 @@ public class Gerente extends Funcionario {
 		return clave == "AluraCursosOnline";
 	}
 	
+	// Sobreescritura de metodo
 	public double getBonificacion() {
-		return this.getSalario();
+		return super.getSalario() + super.getBonificacion();
 	}
 }
