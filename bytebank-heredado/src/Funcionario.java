@@ -1,10 +1,10 @@
 
-public class Funcionario {
+public abstract class Funcionario {
 	
 	private String nombre;
 	private String documento;
 	private double salario;
-	//private int tipo;
+	private int tipo;
 	
 	public Funcionario() {
 		
@@ -28,7 +28,7 @@ public class Funcionario {
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
-	
+	/*
 	public double getBonificacion() {
 		//if(this.tipo == 0) {
 		return this.salario * 0.05;
@@ -36,16 +36,17 @@ public class Funcionario {
 			return this.salario;
 		}else {
 			return 0;
-		}*/
-	}
-	/*
+		}//
+	}*/
+	public abstract double getBonificacion();
+	
 	public int getTipo() {
 		return tipo;
 	}
 
 	public void setTipo(int tipo) {
 		this.tipo = tipo;
-	}*/
+	}
 	
 	
 

@@ -1,7 +1,7 @@
 // entidad
-class Cuenta {
+public abstract class  Cuenta {
 
-	private double saldo;
+	protected double saldo;
 	private int agencia;
 	private int numero;
 	private Cliente titular = new Cliente();
@@ -16,9 +16,9 @@ class Cuenta {
 	}
 	
 	// No retorna valor
-	public void depositar(double valor){
+	public abstract void depositar(double valor);/*{
 		this.saldo += valor;
-	}
+	}*/
 	
 	// Retorna valor
 	public boolean retirar (double valor) {
